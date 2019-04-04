@@ -479,7 +479,9 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
      */
 
 
-    constructor (string memory name, string memory symbol, string memory baseTokenURI) public {
+    constructor (string memory name, string memory symbol, string memory baseTokenURI)
+    public
+    {
         // TODO: set instance var values
         _name = name;
         _symbol = symbol;
@@ -513,7 +515,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
         // see https://github.com/oraclize/ethereum-api/blob/master/oraclizeAPI_0.5.sol for strConcat()
     // require the token exists before setting
 
-    function setTokenURI(uint256 tokenId) internal {
+    function _setTokenURI(uint256 tokenId) internal {
         require(_exists(tokenId));
         _tokenURIs[tokenId] = strConcat(_baseTokenURI, uint2str(tokenId));
     }
@@ -528,19 +530,19 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 //      -takes in a 'to' address, tokenId, and tokenURI as parameters
 //      -returns a true boolean upon completion of the function
 //      -calls the superclass mint and setTokenURI functions
-contract CustomERC721Token is ERC721Metadata {
+contract ImmoERC721Token is ERC721Metadata {
 
-    constructor (string memory name, string memory symbol)
-    ERC721Metadata(name, symbol, "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/")
+    constructor ()
+    ERC721Metadata("Immo Token", "IMTK", "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/")
     public {}
 
-    function mint(address to, uint256 tokenId, string memory tokenURI)
+    function mint(address to, uint256 tokenId)
     public
     onlyOwner
     returns (bool)
     {
         _mint(to, tokenId);
-        setTokenURI(tokenId);
+        _setTokenURI(tokenId);
         return true;
     }
 
