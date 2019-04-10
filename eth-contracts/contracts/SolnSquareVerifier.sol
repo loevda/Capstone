@@ -1,13 +1,9 @@
 pragma solidity >=0.4.21 <0.6.0;
 
 import "./ERC721Mintable.sol";
-import "./verifier.sol";
+import "./SquareVerifier.sol";
 
 // TODO define a contract call to the zokrates generated solidity contract <Verifier> or <renamedVerifier>
-contract SquareVerifier {
-
-}
-
 
 // TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class
 contract SolnSquareVerifier is ImmoERC721Token {
@@ -22,16 +18,15 @@ contract SolnSquareVerifier is ImmoERC721Token {
     Solution[] private solutions;
 
     // TODO define a mapping to store unique solutions submitted
-    mapping(byte32 => Solution) private solutionsMap;
+    mapping(bytes32 => Solution) private solutionsMap;
 
 
     // TODO Create an event to emit when a solution is added
     event SolutionAdded(uint256 _tokenId, address _owner);
 
     // TODO Create a function to add the solutions to the array and emit the event
-    function addSolution(uint256 _tokenID, address _owner) public {
-        Solution solution = (_tokenId, _owner );
-        solutions.push(solution);
+    function addSolution(uint256 _tokenId, address _owner) public {
+        solutions.push(Solution(_tokenId, _owner));
         emit SolutionAdded(_tokenId, _owner);
     }
 
