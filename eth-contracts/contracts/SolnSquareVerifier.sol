@@ -17,7 +17,7 @@ contract SolnSquareVerifier is ImmoERC721Token {
     // TODO define a solutions struct that can hold an index & an address
     struct Solution {
         uint256 tokenId;
-        address owner;
+        address to;
     }
 
     // TODO define an array of the above struct
@@ -28,20 +28,42 @@ contract SolnSquareVerifier is ImmoERC721Token {
 
 
     // TODO Create an event to emit when a solution is added
-    event SolutionAdded(uint256 _tokenId, address _owner);
+    event SolutionAdded(uint256 _tokenId, address _to);
 
     // TODO Create a function to add the solutions to the array and emit the event
-    function addSolution(uint256 _tokenId, address _owner) public {
-        solutions.push(Solution(_tokenId, _owner));
-        emit SolutionAdded(_tokenId, _owner);
+    function addSolution(uint256 _tokenId, address _to, bytes32 memory _k) internal {
+        require(solutionsMap[_k].to != address(0), "Solution already exists");
+        Solution storage solution = (_tokenId, _to);
+        solutions.push(solution);
+        solutionsMap[_k] = solution;
+        emit SolutionAdded(_tokenId, _to);
     }
 
 
     // TODO Create a function to mint new NFT only after the solution has been verified
     //  - make sure the solution is unique (has not been used before)
     //  - make sure you handle metadata as well as tokenSuplly
-    function mintNewNFT() public pure {
-
+    function mintNewNFT
+    (
+        address to,
+        uint256 tokenId,
+        uint[2] memory a,
+        uint[2] memory a_p,
+        uint[2][2] memory b,
+        uint[2] memory b_p,
+        uint[2] memory c,
+        uint[2] memory c_p,
+        uint[2] memory h,
+        uint[2] memory k,
+        uint[2] memory input
+    )
+    public
+    {
+        require(squareVerifier.verifyTx(a, a_p, b, b_p, c, c_p, h, k, input),
+            "Verification has failed.");
+        bytes32 k = keccak256(abi.encodePacked(a, a_p, b, b_p, c, c_p, h, k, input));
+        addSolution(k, to, tokenId);
+        mint(to, tokenId);
     }
 
 }
