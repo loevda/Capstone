@@ -35,6 +35,7 @@ contract Ownable {
     function transferOwnership(address newOwner) public onlyOwner {
         // TODO add functionality to transfer control of the contract to a newOwner.
         // make sure the new owner is a real address
+        require(newOwner != address(0), "Invalid address");
         _owner = newOwner;
         emit OwnershipTransfered(newOwner);
 
