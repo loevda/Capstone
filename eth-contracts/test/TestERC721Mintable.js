@@ -18,7 +18,6 @@ contract('TestERC721Mintable', accounts => {
                 } catch(error) {
                     console.log(error.toString());
                 }
-
             }
         })
 
