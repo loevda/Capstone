@@ -253,11 +253,11 @@ contract ERC721 is Pausable, ERC165 {
         // TODO: require token is being transfered to valid address
         require(to != address(0), "Invalid to address");
         // TODO: clear approval
-        require(_isApprovedOrOwner(msg.sender, tokenId), "Sender is not approved"); //NOT SURE
-        // TODO: update token counts & transfer ownership of the token ID 
-        Counters.decrement(_ownedTokensCount[from]);
-        Counters.increment(_ownedTokensCount[to]);
-        safeTransferFrom(from, to, tokenId);
+        _clearApproval(tokenId);
+        // TODO: update token counts & transfer ownership of the token ID
+        _ownedTokensCount[from].decrement();
+        _ownedTokensCount[to].increment();
+        _tokenOwner[tokenId] = to;
         // TODO: emit correct event
         emit Transfer(from, to, tokenId);
     }
