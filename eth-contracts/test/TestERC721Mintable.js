@@ -41,15 +41,16 @@ contract('TestERC721Mintable', accounts => {
         })
 
         it('should transfer token from one owner to another', async function () {
+            let result = undefined;
             try {
-                let tr = await this.contract.safeTransferFrom(account_one,
-                    account_two, 1);
+                await this.contract.safeTransferFrom(account_one, account_two, 1);
+                // check new owenership
+                result = await this.contract.ownerOf(1);
             }catch(error) {
                 console.log(error.toString());
             }
-
-            /*let num = await this.contract.balanceOf(account_two);
-            assert.equal(num, 1, "Incorrect token balance");*/
+            // check owner
+            assert.equal(result, account_two, "Incorrect token balance");
         })
     });
 
