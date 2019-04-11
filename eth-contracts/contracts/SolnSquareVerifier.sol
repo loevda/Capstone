@@ -31,9 +31,9 @@ contract SolnSquareVerifier is ImmoERC721Token {
     event SolutionAdded(uint256 _tokenId, address _to);
 
     // TODO Create a function to add the solutions to the array and emit the event
-    function addSolution(uint256 _tokenId, address _to, bytes32 memory _k) internal {
+    function addSolution(uint256 _tokenId, address _to, bytes32 _k) internal {
         require(solutionsMap[_k].to != address(0), "Solution already exists");
-        Solution storage solution = (_tokenId, _to);
+        Solution memory solution = Solution({tokenId: _tokenId, to: _to});
         solutions.push(solution);
         solutionsMap[_k] = solution;
         emit SolutionAdded(_tokenId, _to);
@@ -61,11 +61,10 @@ contract SolnSquareVerifier is ImmoERC721Token {
     {
         require(squareVerifier.verifyTx(a, a_p, b, b_p, c, c_p, h, k, input),
             "Verification has failed.");
-        bytes32 k = keccak256(abi.encodePacked(a, a_p, b, b_p, c, c_p, h, k, input));
-        addSolution(k, to, tokenId);
-        mint(to, tokenId);
+        bytes32 _k = keccak256(abi.encodePacked(a, a_p, b, b_p, c, c_p, h, k, input));
+        addSolution(tokenId, to, _k);
+        super.mint(to, tokenId);
     }
-
 }
 
 

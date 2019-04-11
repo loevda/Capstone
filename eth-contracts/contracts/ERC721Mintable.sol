@@ -542,8 +542,8 @@ contract ImmoERC721Token is ERC721Metadata {
     onlyOwner
     returns (bool)
     {
-        _mint(to, tokenId);
-        _setTokenURI(tokenId);
+        super._mint(to, tokenId);
+        super._setTokenURI(tokenId);
         return true;
     }
 
