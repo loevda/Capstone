@@ -32,7 +32,7 @@ contract SolnSquareVerifier is ImmoERC721Token {
 
     // TODO Create a function to add the solutions to the array and emit the event
     function addSolution(uint256 _tokenId, address _to, bytes32 _k) internal {
-        require(solutionsMap[_k].to != address(0), "Solution already exists");
+        require(solutionsMap[_k].to == address(0), "Solution already exists");
         Solution memory solution = Solution({tokenId: _tokenId, to: _to});
         solutions.push(solution);
         solutionsMap[_k] = solution;

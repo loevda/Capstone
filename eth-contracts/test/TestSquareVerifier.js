@@ -42,7 +42,5 @@ contract('SquareVerifier', accounts => {
             assert.equal(result.logs.length, 0, "Transaction verification should fail");
         });
     });
-
-
 });
 
