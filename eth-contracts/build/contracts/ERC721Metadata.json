@@ -2689,9 +2689,9 @@
           }
         ],
         "contractDependencies": [
+          127,
           72,
-          173,
-          127
+          173
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -9080,10 +9080,10 @@
           }
         ],
         "contractDependencies": [
+          127,
           657,
           72,
-          173,
-          127
+          173
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -12753,11 +12753,11 @@
           }
         ],
         "contractDependencies": [
+          127,
           955,
           657,
           72,
           173,
-          127,
           7428
         ],
         "contractKind": "contract",
@@ -14055,12 +14055,12 @@
           }
         ],
         "contractDependencies": [
+          127,
           955,
           1064,
           657,
           72,
           173,
-          127,
           7428
         ],
         "contractKind": "contract",
@@ -16665,9 +16665,9 @@
           }
         ],
         "contractDependencies": [
+          127,
           72,
-          173,
-          127
+          173
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -23056,10 +23056,10 @@
           }
         ],
         "contractDependencies": [
+          127,
           657,
           72,
-          173,
-          127
+          173
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -26729,11 +26729,11 @@
           }
         ],
         "contractDependencies": [
+          127,
           955,
           657,
           72,
           173,
-          127,
           7428
         ],
         "contractKind": "contract",
@@ -28031,12 +28031,12 @@
           }
         ],
         "contractDependencies": [
+          127,
           955,
           1064,
           657,
           72,
           173,
-          127,
           7428
         ],
         "contractKind": "contract",
@@ -28491,7 +28491,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-04-12T07:33:32.998Z",
+  "updatedAt": "2019-04-13T10:48:48.037Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {

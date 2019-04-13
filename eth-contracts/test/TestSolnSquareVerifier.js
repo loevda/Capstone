@@ -34,5 +34,42 @@ contract('SolnSquareVerifier', accounts => {
             let result = await this.contract.ownerOf(tokenId);
             assert.equal(result , account_one, "Invalid token owner");
         });
+        it('solution cannot be used twice', async function () {
+            let tokenId = 22;
+            let result;
+            try {
+                await this.contract.mintNewNFT(
+                    account_one,
+                    tokenId,
+                    proof.proof.A,
+                    proof.proof.A_p,
+                    proof.proof.B,
+                    proof.proof.B_p,
+                    proof.proof.C,
+                    proof.proof.C_p,
+                    proof.proof.H,
+                    proof.proof.K,
+                    proof.input,
+                    {from: account_one}
+                );
+                await this.contract.mintNewNFT(
+                    account_one,
+                    tokenId,
+                    proof.proof.A,
+                    proof.proof.A_p,
+                    proof.proof.B,
+                    proof.proof.B_p,
+                    proof.proof.C,
+                    proof.proof.C_p,
+                    proof.proof.H,
+                    proof.proof.K,
+                    proof.input,
+                    {from: account_one}
+                );
+            } catch(error) {
+                result = false;
+            }
+            assert.equal(result , false, "Solution should be used twice");
+        });
     });
 });
