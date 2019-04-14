@@ -66,10 +66,11 @@ contract('SolnSquareVerifier', accounts => {
                     proof.input,
                     {from: account_one}
                 );
+                result = true;
             } catch(error) {
                 result = false;
             }
-            assert.equal(result , false, "Solution should be used twice");
+            assert.equal(result , false, "Solution should not be used twice");
         });
     });
 });

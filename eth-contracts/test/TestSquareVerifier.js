@@ -37,7 +37,7 @@ contract('SquareVerifier', accounts => {
                 proof.proof.C_p,
                 proof.proof.H,
                 proof.proof.K,
-                [9,2],// change the input
+                [9,0],// change the input
             );
             assert.equal(result.logs.length, 0, "Transaction verification should fail");
         });
