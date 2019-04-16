@@ -2520,8 +2520,8 @@
         ],
         "contractDependencies": [
           127,
-          72,
-          173
+          173,
+          72
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -8912,8 +8912,8 @@
         "contractDependencies": [
           127,
           657,
-          72,
-          173
+          173,
+          72
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -12583,11 +12583,11 @@
           }
         ],
         "contractDependencies": [
-          127,
           955,
+          127,
           657,
-          72,
           173,
+          72,
           7428
         ],
         "contractKind": "contract",
@@ -13885,12 +13885,12 @@
           }
         ],
         "contractDependencies": [
-          127,
           955,
           1064,
+          127,
           657,
-          72,
           173,
+          72,
           7428
         ],
         "contractKind": "contract",
@@ -16496,8 +16496,8 @@
         ],
         "contractDependencies": [
           127,
-          72,
-          173
+          173,
+          72
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -22888,8 +22888,8 @@
         "contractDependencies": [
           127,
           657,
-          72,
-          173
+          173,
+          72
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -26559,11 +26559,11 @@
           }
         ],
         "contractDependencies": [
-          127,
           955,
+          127,
           657,
-          72,
           173,
+          72,
           7428
         ],
         "contractKind": "contract",
@@ -27861,12 +27861,12 @@
           }
         ],
         "contractDependencies": [
-          127,
           955,
           1064,
+          127,
           657,
-          72,
           173,
+          72,
           7428
         ],
         "contractKind": "contract",
@@ -28321,7 +28321,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.2",
-  "updatedAt": "2019-04-13T10:48:48.030Z",
+  "updatedAt": "2019-04-15T14:32:29.403Z",
   "devdoc": {
     "methods": {
       "isApprovedForAll(address,address)": {
