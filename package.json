@@ -11,14 +11,21 @@
   "author": "pk <pkrasam@gmail.com> (https://ipfs.infura.io/ipfs/QmSXiR9Khm3yo1J67nUopvVBxFJ8YGN2fUGZ34Etr3m92x/)",
   "license": "MIT",
   "devDependencies": {
-    "lite-server": "2.4.0"
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "lite-server": "2.4.0",
+    "require.js": "^1.0.0"
   },
   "dependencies": {
     "bignumber": "^1.1.0",
     "bignumber.js": "^8.1.1",
+    "dotenv": "^7.0.0",
     "openzeppelin-solidity": "^2.2.0",
     "solc": "^0.5.2",
     "solc-js": "^0.5.2",
-    "truffle-assertions": "^0.8.2"
+    "truffle-assertions": "^0.8.2",
+    "truffle-contract": "^4.0.11",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "web3": "^1.0.0-beta.52"
   }
 }

@@ -24,3 +24,5 @@ yarn-error.log*
 /eth-contracts/.secret
 
 /zokrates/code/square/proofs
+
+/app
