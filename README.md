@@ -1,6 +1,6 @@
 # Capstone Project
 
-Decentralized housing product. 
+Decentralized housing product on the Ethereum blockchain using docker and Zokrates
 
 ## Setup project:
 __Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2__ and __npm v10.15.1__
@@ -9,6 +9,9 @@ __Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2
 3. Create an .env file in the __eth-contracts__ folder and add you Infura API KEY:<br />
    __INFURA_KEY=YOUR_INFURA_API_KEY__
 4. Create a __.secret__ file in the __eth-contracts__ folder and add your wallet seed.
+
+## Generating proof
+See [ZoKrates](https://github.com/Zokrates/ZoKrates) documentation
 
 ## Testing
 1. cd eth-contracts
