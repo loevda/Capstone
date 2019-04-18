@@ -15,7 +15,9 @@ __Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2
 | 0x8c3116EEf0e88f0114BFEB5D13a4092D7CDf35f4                         |
 
 
+## Opensea profile
 
+https://rinkeby.opensea.io/accounts/0x64faece4a9b520232e7674b6a5bd8d2253cc53c0
 
 
 # Project Resources
