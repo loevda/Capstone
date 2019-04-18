@@ -10,6 +10,11 @@ __Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2
    __INFURA_KEY=YOUR_INFURA_API_KEY__
 4. Create a __.secret__ file in the __eth-contracts__ folder and add your wallet seed.
 
+## Testing
+1. cd eth-contracts
+2. truffle compile --all
+3. truffle dev
+4. test
 
 ## Contract on Rinkeby
 
