@@ -7,6 +7,17 @@ __Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2
 1. Clone the repository
 2. Run command __npm install__ to install the project dependencies.
 
+
+## Contract on Rinkeby
+
+| Contract address on Rinkeby test network                           | 
+|--------------------------------------------------------------------|
+| 0x8c3116EEf0e88f0114BFEB5D13a4092D7CDf35f4                         |
+
+
+
+
+
 # Project Resources
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
