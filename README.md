@@ -2,6 +2,11 @@
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
+## Setup project:
+__Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2__ and __npm v10.15.1__
+1. Clone the repository
+2. Run command __npm install__ to install the project dependencies.
+
 # Project Resources
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
