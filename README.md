@@ -1,6 +1,6 @@
 # Capstone Project
 
-The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
+Decentralized housing product. 
 
 ## Setup project:
 __Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2__ and __npm v10.15.1__
