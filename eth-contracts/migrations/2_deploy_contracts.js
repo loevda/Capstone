@@ -1,4 +1,3 @@
-// migrating the appropriate contracts
 const SquareVerifier = artifacts.require("SquareVerifier");
 const SolnSquareVerifier = artifacts.require("SolnSquareVerifier");
 
