@@ -6,9 +6,9 @@ The capstone will build upon the knowledge you have gained in the course in orde
 __Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2__ and __npm v10.15.1__
 1. Clone the repository
 2. Run command __npm install__ to install the project dependencies.
-3. Create an .env file in the project root folder and add you Infura API KEY:<br />
+3. Create an .env file in the __eth-contracts__ folder and add you Infura API KEY:<br />
    __INFURA_KEY=YOUR_INFURA_API_KEY__
-4. Create a __.secret__ file in the project root folder and add your wallet seed.
+4. Create a __.secret__ file in the __eth-contracts__ folder and add your wallet seed.
 
 
 ## Contract on Rinkeby
