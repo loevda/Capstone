@@ -1,4 +1,3 @@
-/*var ERC721MintableComplete = artifacts.require('SolnSquareVerifier');*/
 var ImmoERC721Token = artifacts.require('ImmoERC721Token');
 var BigNumber = require('bignumber.js');
 
