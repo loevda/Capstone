@@ -19,6 +19,16 @@ See [ZoKrates](https://github.com/Zokrates/ZoKrates) documentation
 3. truffle dev
 4. test
 
+## Migrating to Rinkeby
+1. cd eth-contracts
+2. Make sure to update your seed and infura key as in the setup instructions
+3. truffle compile --all
+4. truffle migrate --reset --network rinkeby
+
+## Minting token
+1. Update the __prooofs__ variable inside the __./app/js/app.js__ file
+2. __npm run dev__ to start a very basic front-end dapp
+
 ## Contract on Rinkeby
 
 | Contract             | Address on Rinkeby test network                                    | 
