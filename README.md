@@ -36,7 +36,7 @@ See [ZoKrates](https://github.com/Zokrates/ZoKrates) documentation
 
 ## Opensea storefront
 
-https://rinkeby.opensea.io/accounts/0x64faece4a9b520232e7674b6a5bd8d2253cc53c0
+https://rinkeby.opensea.io/category/immotokenv2
 
 
 # Project Resources
