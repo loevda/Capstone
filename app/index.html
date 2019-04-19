@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App</title>
+</head>
+<body>
+
+<section>
+    <div>
+        <p>
+            <label>Token ID</label>
+            <input type="number" name="tokenId" id="tokenId" />
+        </p>
+        <p>
+            <label>Proof #</label>
+            <select name="proofs" id="proofs">
+
+            </select>
+        </p>
+        <p>
+            <button id="mintButton" data-id="1">Mint token</button>
+        </p>
+
+    </div>
+    <hr />
+    <div>
+        <p>
+            <label>Token id</label>
+            <input type="number" name="tk" id="tk" />
+        </p>
+        <p>
+            <button name="tkb" data-id="2">Get token info</button>
+        </p>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/truffle-contract.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
