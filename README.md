@@ -26,7 +26,7 @@ See [ZoKrates](https://github.com/Zokrates/ZoKrates) documentation
 4. truffle migrate --reset --network rinkeby
 
 ## Minting token
-1. Update the __prooofs__ variable inside the __./app/js/app.js__ file
+1. Update the __proofs__ variable inside the __./app/js/app.js__ file with your zokrates proofs
 2. __npm run dev__ to start a very basic front-end dapp
 
 ## Contract on Rinkeby
