@@ -21,12 +21,20 @@ See [ZoKrates](https://github.com/Zokrates/ZoKrates) documentation
 
 ## Contract on Rinkeby
 
-| Contract address on Rinkeby test network                           | 
-|--------------------------------------------------------------------|
-| 0x8c3116EEf0e88f0114BFEB5D13a4092D7CDf35f4                         |
+| Contracts addresses on Rinkeby test network                           | 
+|-----------------------------------------------------------------------|
+|  SquareVerifier      |  0x846F4f6FCF11BafC1D78bD70dfc63AdE741F6f57    |
+|  SolnSquareVerifier  |  0xfd1eD88a56882627a12d010efe58D11092906167    |
+
+## ABI 
+
+| Contracts ABIs                                                                    | 
+|-----------------------------------------------------------------------------------|
+|  SquareVerifier      |  ./eth-contracts/build/contracts/SquareVerifier.json       |
+|  SolnSquareVerifier  |  ./eth-contracts/build/contracts/SolnSquareVerifier.json   |
 
 
-## Opensea profile
+## Opensea storefront
 
 https://rinkeby.opensea.io/accounts/0x64faece4a9b520232e7674b6a5bd8d2253cc53c0
 
