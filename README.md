@@ -1,6 +1,6 @@
-# Capstone Project
+# Decentralised Real Estate
 
-Decentralized housing product on the Ethereum blockchain using docker and Zokrates
+Decentralized housing product on the Ethereum blockchain using docker, Zokrates and Opensea
 
 ## Setup project:
 __Notes:__ The project has been tested with __Truffle v5.0.4__, __Solidity 0.5.2__ and __npm v10.15.1__
